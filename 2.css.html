@@ -1,10 +1,20 @@
 <!doctype html><!-- 이문서는 html이 있다 라고 표시하기위한 문자열-->
-<html><!-- head와 body를 감싸는 최고위층 tag>
+<html><!-- head와 body를 감싸는 최고위층 tag-->
   <head><!-- 본문을(body) 설명하는 태그는 head tag로 묶기로 정의-->
     <title>WEB1 - CSS</title>
     <!-- title 웹페이지의 타이틀 (제목 표시) -->
     <meta charset="utf-8">
     <!-- 문자 규칙 설정 (utf-8로 읽어라 ) -->
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-G6Y14FSLNL"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-G6Y14FSLNL');
+    </script>
+    <!--구글 통계분석기 코드 -->
   </head>
 
   <body>
@@ -33,5 +43,43 @@
     <p style="margin-top:35px;">HTML 공부목적으로 작성된 해당 내용은 수정 될 수 있습니다.</p>
     <!-- p태그 사용시 css style 적용가능 위 단락과 여백을 주고싶은경우 margin-top:주고싶은거리px;-->
     <P>CSS 설명 페이지입니다.</P>
+    <P>
+      <!-- 댓글달기 기능 아래서는 disqus를 사용하여 댓글을 추가 비슷한 서비스로 liveRe라는 서비스가 존자-->
+      <div id="disqus_thread"></div>
+        <script>
+
+        /**
+        *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+        *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
+        /*
+        var disqus_config = function () {
+        this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+        this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+        };
+        */
+        (function() { // DON'T EDIT BELOW THIS LINE
+        var d = document, s = d.createElement('script');
+        s.src = 'https://web1-u8opkounws.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+        })();
+        </script>
+      <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    </P>
+    <p><!-- 채팅기능 tawk.to를 사용한 채팅기능 추가 -->
+      <!--Start of Tawk.to Script-->
+      <script type="text/javascript">
+      var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+      (function(){
+      var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+      s1.async=true;
+      s1.src='https://embed.tawk.to/5f2d20f25c885a1b7fb7176b/default';
+      s1.charset='UTF-8';
+      s1.setAttribute('crossorigin','*');
+      s0.parentNode.insertBefore(s1,s0);
+      })();
+      </script>
+      <!--End of Tawk.to Script-->
+    </p>
   </body>
 </html>
